@@ -1,13 +1,13 @@
 export const dynamic = "force-dynamic";
 
 import { createNewChannel } from "@/utils/bot";
-import { createRateLimiter } from "@/utils/limiter";
+// import { createRateLimiter } from "@/utils/limiter";
 import { NextRequest, NextResponse } from "next/server";
 
-const rateLimiter = createRateLimiter({
-  maxRequests: 1,
-  windowMs: 60 * 10000,
-});
+// const rateLimiter = createRateLimiter({
+//   maxRequests: 1,
+//   windowMs: 60 * 10000,
+// });
 
 export async function POST(req: NextRequest) {
   // const isAllowed = rateLimiter(req);
