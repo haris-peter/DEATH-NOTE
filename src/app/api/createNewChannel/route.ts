@@ -10,7 +10,7 @@ const rateLimiter = createRateLimiter({
 });
 
 export async function POST(req: NextRequest) {
-  const isAllowed = rateLimiter(req);
+  // const isAllowed = rateLimiter(req);
 
   // if (!isAllowed) {
   //   return new Response("Too many requests from the same IP!", { status: 429 });
